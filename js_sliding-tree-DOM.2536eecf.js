@@ -1,0 +1,2 @@
+"use strict";var wrapElement=function(e,t){var n=document.createElement(t);n.textContent=e.firstChild.textContent,e.replaceChild(n,e.firstChild)},items=document.querySelectorAll("li:has(> ul)");items.forEach(function(e){return wrapElement(e,"span")}),document.addEventListener("click",function(e){if("SPAN"===e.target.tagName){var t=e.target.nextElementSibling;"none"===t.style.display?t.style.display="block":t.style.display="none"}});
+//# sourceMappingURL=js_sliding-tree-DOM.2536eecf.js.map
