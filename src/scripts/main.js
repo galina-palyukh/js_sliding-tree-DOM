@@ -15,7 +15,7 @@ document.addEventListener('click', (e) => {
   if (e.target.tagName === 'SPAN') {
     const insideUl = e.target.nextElementSibling;
 
-    if (insideUl && insideUl.style.display === 'none') {
+    if (insideUl.tagName === 'UL' && insideUl.style.display === 'none') {
       insideUl.style.display = 'block';
     } else {
       insideUl.style.display = 'none';
